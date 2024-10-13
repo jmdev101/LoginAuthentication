@@ -1,0 +1,82 @@
+body {
+  font-family: "Inter", serif;
+  background-color: #f3f3f3;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid lightgray;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  height: 60vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 40px 0 40px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  border: 1px solid lightgray;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.create-account {
+  width: 50%;
+  height: 50px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
