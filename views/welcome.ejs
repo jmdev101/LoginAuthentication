@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
-    <h1>Hello there,</h1>
-    <a href="/logout">Log Out</a>
+    <div class="welcome-content">
+      <h1>Hello there, <%= email %></h1>
+      <img src="/images/hello.jpg" alt="Hello" />
+      <a href="/logout">Log Out</a>
+    </div>
   </body>
 </html>

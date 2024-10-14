@@ -64,7 +64,7 @@ app.get("/register", checkLoggedIn, (req, res) => {
 
 app.get("/welcome", checkAuthenticated, (req, res) => {
   console.log(req.user);
-  res.render("welcome.ejs");
+  res.render("welcome.ejs", { email: req.user.email });
 });
 
 app.post("/register", async (req, res) => {

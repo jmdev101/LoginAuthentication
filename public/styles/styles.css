@@ -1,6 +1,7 @@
 body {
   font-family: "Inter", serif;
   background-color: #f3f3f3;
+  margin: 0;
 }
 
 hr {
@@ -12,7 +13,6 @@ hr {
 a {
   text-decoration: none;
   font-size: 24px;
-  margin-right: 16px;
   color: black;
 }
 
@@ -59,6 +59,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="submit"]:hover {
+  background-color: rgb(230, 230, 230);
+}
+
 .create-account {
   width: 50%;
   height: 50px;
@@ -81,9 +85,135 @@ input[type="submit"] {
   font-weight: 500;
 }
 
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: lightgray;
+  flex-wrap: wrap;
+}
+
+.login-container a {
+  color: black;
+}
+
+.login-container .auth-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: green;
+}
+
+.left-header,
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.right-header a {
+  padding: 10px 20px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 24px;
+}
+
+.content-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 40px;
+}
+
+.left-content,
+.right-content {
+  width: calc(50% - 20px);
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-content h1 {
+  font-weight: 800;
+  color: green;
+  font-size: 36px;
+  margin: 8px 0;
+}
+
+.left-content h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.right-content img {
+  width: 100%;
+  max-height: 500px;
+  min-height: 300px;
+  border-radius: 16px;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-content h1 {
+  margin: 0;
+  font-size: 64px;
+  color: green;
+}
+
+.welcome-content a {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+}
+
+.welcome-content a:hover {
+  background-color: rgb(1, 110, 1);
+}
+
+.welcome-content img {
+  width: auto;
+  max-height: 500px;
+  min-height: 300px;
+  border-radius: 16px;
+  margin: 40px;
+}
+
+.right-header .register-button {
+  border: none;
+  background-color: green;
+  color: white;
+}
+
+.register-button:hover,
+.create-account:hover {
+  border: none;
+  background-color: rgb(1, 110, 1);
+}
+
+.login-button:hover {
+  background-color: green;
+  color: white;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
     gap: 0;
+  }
+
+  .left-content,
+  .right-content {
+    width: calc(100% - 20px);
   }
 }
